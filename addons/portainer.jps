@@ -18,7 +18,7 @@ globals:
   CERTS: ~/.ssh/certs
   DEPLOY_HOOK: ~/deployLE.sh
   UNDEPLOY_HOOK: ~/undeployLE.sh 
-  DEPLOY_HOOK_JS: https://raw.githubusercontent.com/jelastic-jps/docker/master/addons/le-ssl-deploy-hook.js?_r=${fn.random}    
+  DEPLOY_HOOK_JS: https://raw.githubusercontent.com/lazarenkoalexey/docker/test/addons/le-ssl-deploy-hook.js?_r=${fn.random}    
   
 onInstall:
   - generateKeys: ${nodes.cp.master.id}
