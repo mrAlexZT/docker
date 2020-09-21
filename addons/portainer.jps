@@ -16,8 +16,8 @@ globals:
   user: admin
   password: ${fn.password}
   CERTS: ~/.ssh/certs
-  DEPLOY_HOOK: ~/deployLE.sh
-  UNDEPLOY_HOOK: ~/undeployLE.sh 
+  DEPLOY_HOOK: /var/lib/jelastic/keys/deployLE.sh
+  UNDEPLOY_HOOK: /var/lib/jelastic/keys/undeployLE.sh 
   DEPLOY_HOOK_JS: https://raw.githubusercontent.com/lazarenkoalexey/docker/test/addons/le-ssl-deploy-hook.js?_r=${fn.random}    
   
 onInstall:
